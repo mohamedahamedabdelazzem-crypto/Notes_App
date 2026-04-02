@@ -30,6 +30,12 @@ class NotesView extends StatelessWidget {
           ),
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Color(0xff5755DF),
+        onPressed: () {},
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        child: Icon(Icons.add_box_outlined, size: 25, color: Color(0xFFFFFFFF)),
+      ),
       body: NotesViewBody(),
     );
   }

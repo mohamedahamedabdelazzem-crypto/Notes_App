@@ -6,7 +6,7 @@ class NoteItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 0, right: 15, left: 15, bottom: 10),
+      padding: const EdgeInsets.only(top: 0, right: 15, left: 15, bottom: 20),
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
@@ -63,7 +63,7 @@ class NoteItem extends StatelessWidget {
               Text(
                 maxLines: 5,
                 r"The future of design isn't just about utility. It's about how the space between elements makes the user feel. We need to embrace asymmetric whitespace...",
-                style: TextStyle(fontFamily: 'Monrope', fontSize: 18),
+                style: TextStyle(fontFamily: 'Monrope', fontSize: 16),
               ),
             ],
           ),
