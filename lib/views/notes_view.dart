@@ -11,6 +11,7 @@ class NotesView extends StatelessWidget {
       backgroundColor: Color(0xffF8F9FA),
       drawer: Drawer(backgroundColor: Color(0xFFFFFFFF)),
       appBar: AppBar(
+        scrolledUnderElevation: 0,
         elevation: 0,
         backgroundColor: Color(0xffF8F9FA),
         centerTitle: false,
