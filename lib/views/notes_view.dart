@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/widgets/notes_view_body.dart';
+import 'package:notes_app/widgets/bottom_sheet.dart';
 
 class NotesView extends StatelessWidget {
   const NotesView({super.key});
@@ -32,7 +33,15 @@ class NotesView extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Color(0xff5755DF),
-        onPressed: () {},
+        onPressed: () {
+          showModalBottomSheet(
+            backgroundColor: Colors.white,
+            context: context,
+            builder: (context) {
+              return CustomBottomSheet();
+            },
+          );
+        },
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         child: Icon(Icons.add_box_outlined, size: 25, color: Color(0xFFFFFFFF)),
       ),
