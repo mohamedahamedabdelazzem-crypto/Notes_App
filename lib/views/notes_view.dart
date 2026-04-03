@@ -9,7 +9,7 @@ class NotesView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xffF8F9FA),
-      drawer: Drawer(),
+      drawer: Drawer(backgroundColor: Color(0xFFFFFFFF)),
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Color(0xffF8F9FA),

@@ -60,7 +60,6 @@ class BottomSheetTextField extends StatelessWidget {
             fillColor: const Color(0xffF1F4F5),
             hintText: hintText,
             hintStyle: const TextStyle(color: Colors.black45),
-
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15.0),
               borderSide: BorderSide(color: Colors.grey.shade300, width: 1.5),
@@ -72,7 +71,7 @@ class BottomSheetTextField extends StatelessWidget {
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15.0),
               borderSide: BorderSide(
-                color: Colors.blue.shade400,
+                color: Color(0xff6361EB),
                 width: 2.0,
               ), // ✅ بيتغير لما تضغط
             ),
