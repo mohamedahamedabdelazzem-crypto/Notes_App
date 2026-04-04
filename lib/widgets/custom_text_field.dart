@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
-  const CustomTextField({super.key});
-
+  const CustomTextField({super.key, this.onSaved});
+  final void Function(String?)? onSaved;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -12,7 +12,15 @@ class CustomTextField extends StatelessWidget {
         top: 10,
         bottom: 10,
       ),
-      child: TextField(
+      child: TextFormField(
+        onSaved: onSaved,
+        validator: (value) {
+          if (value?.isEmpty ?? true) {
+            return 'Field is required';
+          } else {
+            return null;
+          }
+        },
         decoration: InputDecoration(
           filled: true,
           fillColor: Color(0xffF1F4F5),
